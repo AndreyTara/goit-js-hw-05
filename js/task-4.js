@@ -7,8 +7,8 @@
  * @returns {Number} balance - результат розрахунку балансу .
  */
 
-const getTotalBalanceByGender = (users, gender) => {
-  return users
+const getTotalBalanceByGender = (users, gender) =>
+  users
     .filter(user => {
       return user.gender === gender;
     })
@@ -16,7 +16,6 @@ const getTotalBalanceByGender = (users, gender) => {
       acc += cur.balance;
       return acc;
     }, 0);
-};
 
 console.log('Задача 4. Загальний баланс');
 // У консоль будуть виведені результати її роботи.
