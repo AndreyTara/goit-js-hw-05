@@ -5,11 +5,9 @@
  * @returns {Array<Object>}  - Відсортований масив об’єктів за спаданням кількостій їх друзів користувачів.
  */
 
-const sortByDescendingFriendCount = users => {
-  return users.toSorted((a, b) => {
-    return b.friends.length - a.friends.length;
-  });
-};
+const sortByDescendingFriendCount = users =>
+  users.toSorted((a, b) => b.friends.length - a.friends.length);
+
 console.log('Задача 3. Сортування за кількістю друзів');
 // У консоль будуть виведені результати її роботи.
 console.log(

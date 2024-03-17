@@ -4,11 +4,7 @@
  * @returns {Array<string>}  - Масив імен користувачів .
  */
 
-const getUserNames = users => {
-  return users.map(user => {
-    return user.name;
-  });
-};
+const getUserNames = users => users.map(user => user.name);
 
 console.log('Задача 1. Імена користувачів');
 // У консоль будуть виведені результати її роботи.
