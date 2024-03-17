@@ -6,13 +6,8 @@
  * @returns {Array<Object>}  - Масив об’єктів де є friendName користувачів .
  */
 
-const getUsersWithFriend = (users, friendName) => {
-  return users.filter(user => {
-    return user.friends.some(item => {
-      return item === friendName;
-    });
-  });
-};
+const getUsersWithFriend = (users, friendName) =>
+  users.filter(user => user.friends.some(item => item === friendName));
 
 const allUsers = [
   {
