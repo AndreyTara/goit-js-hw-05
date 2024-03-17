@@ -8,10 +8,9 @@
 
 const getUsersWithFriend = (users, friendName) => {
   return users.filter(user => {
-    const isFriendName = user.friends.some(item => {
+    return user.friends.some(item => {
       return item === friendName;
     });
-    if (isFriendName) return user;
   });
 };
 
